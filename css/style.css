@@ -1,0 +1,58 @@
+/*
+    Name: Raul Vargas, Umass Lowell Computer Science, raul_vargas@student.uml.edu
+    Date Created: 9/4/2022
+    GUI Assignment: Creating your first web page
+
+    File: style.css
+    Description: This file contains all the styling I used for HW1.html
+*/
+
+/*Attributes for the link. This will make it red and control how it reacts when the cursor is hovered over it.*/
+
+h1{
+    color: rgb(167, 79, 38);
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+}
+
+/*Attributes for the button link. This will center the link as well as give it properties when it is hovered over and when the link has been visited before*/
+a:link, a:visited {
+    background-color: #b1342b;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(300%);
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+  
+.menuTable, tr{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Menu Table, td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
