@@ -1,0 +1,108 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/*Sets the header picture to the sunset, makes sure it doesn't repeat it over the entire header, and makes it centered right*/
+header{
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000032;
+	color: white;
+}
+
+/*Makes the background of the page to the one supplied. The font is default but this controls the font for the page*/
+body {
+	background-image: url(ptrbackground.jpg);
+	background-repeat: repeat-x;
+	background-color: #00568f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#wrapper{
+	width: 80%;
+	min-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+img{
+	float:left;
+	padding-right: 20px;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0%;
+}
+
+#content{
+	border-left: 200px solid #adcfe0;
+	padding-left: 30px;
+	list-style-image: url(marker.gif);
+}
+
+nav{
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	background-color: #adcfe0;
+	width: 200px;
+	float: left;
+	margin-right: 30px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #000000;
+	padding: 20px;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+
+/*Changing the color of just the words in the resort*/
+.resort{
+	color: #265386;
+	font-weight: bold;
+}
+
+h1{
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+h2{
+	color: #3399CC;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	padding-top: 75px;
+	font-family: 'Times New Roman', Times, serif;
+	border-left: 200px solid #adcfe0;
+	padding-bottom: 30px;
+	font-size: 12pt;
+	font-style: italic;
+	padding-left: 30px;
+}
