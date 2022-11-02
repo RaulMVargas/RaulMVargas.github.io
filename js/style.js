@@ -5,10 +5,10 @@ Javascript file for HW3
 
 generateTable = () => {
     //import all the values from the html form
-    let minColumn = document.getElementById("minColumn").value;
-    let maxColumn = document.getElementById("maxColumn").value;
-    let minRow = document.getElementById("minRow").value;
-    let maxRow = document.getElementById("maxRow").value;
+    let minColumn = parse(document.getElementById("minColumn").value);
+    let maxColumn = parse(document.getElementById("maxColumn").value);
+    let minRow = parse(document.getElementById("minRow").value);
+    let maxRow = parse(document.getElementById("maxRow").value);
     
     //get an id for the table and create a blank output
     let table = document.getElementById('table');
