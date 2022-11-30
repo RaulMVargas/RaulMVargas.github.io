@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--File: index.html
+Date Created: 10/21/2022
+GUI Assignment: HW3 Multiplication table
+Name: Raul Vargas, Umass Lowell Computer Science, raul_vargas@student.uml.edu
+Description: This is my first web page. I created this for Dr Zhou's GUI 1 course as apart of the fourth assignment
+Sources: https://stackoverflow.com/questions/1581751/removing-dynamic-jquery-ui-tabs
+https://stackoverflow.com/questions/2416547/how-to-add-and-remove-jquery-tabs-dynamically
+https://jesseheines.com/~heines/91.461/91.461-2015-16f/461-assn/jQueryUI1.8_Ch03_TabsWidget.pdf
+https://bushansirgur.in/jquery-validation-example/
+-->
+
+<!-- Main html head -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Page Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Slider jQuery imports, some are redundant -->
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <h1>Welcome to my page.</h1>
+    <!-- Form and Sliders for the min column -->
+    <div class="container">
+      <form class="" id = "inputForm">
+          <label class="control-label col-sm-2" for="minColumn">Minimum Column Value:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="minColumn" placeholder="Minimum Column Value" />
+            <h5 id="minColumnCheck" style="color: red;">
+              Input must be between -50 and 50.
+            </h5>
+            <div id="minColumnSlider">
+            </div>
+          </div>
+        
+
+        <!-- Form and Sliders for the max column -->
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="">Maximum Column Value:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="maxColumn" placeholder="Maximum Column Value" />
+            <h5 id="maxColumnCheck" style="color: red;">
+              Input must be between -50 and 50.
+            </h5>
+            <div id="maxColumnSlider">
+            </div>
+        </div>
+        </div>
+
+        <!-- Form and Sliders for the min row -->
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="">Minimum Row Value:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="minRow" placeholder="Minimum Row Value" />
+            <h5 id="minRowCheck" style="color: red;">
+              Input must be between -50 and 50.
+            </h5>
+            <div id="minRowSlider">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Form and Sliders for the max row -->
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="">Maximum Row Value:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="maxRow" placeholder="Maximum Row Value" />
+            <h5 id="maxRowCheck" style="color: red;">
+              Input must be between -50 and 50.
+            </h5>
+            <div id="maxRowSlider">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <!-- Submit button will generate the table -->
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" onClick="" id="submitButton" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" onClick="" id="deleteIndividualTabs" class="btn btn-default">Delete Individual Tabs</button>
+          </div>
+        </div>
+
+        <label> Enter the num of tabs to remove </label>
+        <input for="indexNum" class ="button" id="tabIndex" type="number">
+
+        <div class="form-group">
+          
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" onClick="" id="deleteAllButton" class="btn btn-default">Delete All Tabs</button>
+          </div>
+        </div>
+      </form>
+      <div id="table"></div>
+    </div>
+    <script src="js/style.js"></script>
+  </body>
+  <!-- Tab div for the tables -->
+  <div id="tabs">
+    <ul id="tabs">
+    </ul>
+  </div>
+</html>
