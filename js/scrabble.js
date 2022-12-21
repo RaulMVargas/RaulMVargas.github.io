@@ -1,3 +1,6 @@
+/*Raul Vargas
+raul_vargas@student.uml.edu*/
+
 let scrabbleTiles = [] ;
 scrabbleTiles["A"] = { "value" : 1,  "original-distribution" : 9,  "number-remaining" : 9, "image" : "tileImages/scrabble/Scrabble_Tile_A.jpg"  } ;
 scrabbleTiles["B"] = { "value" : 3,  "original-distribution" : 2,  "number-remaining" : 2, "image" : "tileImages/scrabble/Scrabble_Tile_B.jpg"  } ;
