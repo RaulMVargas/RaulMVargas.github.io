@@ -1,0 +1,85 @@
+html{
+    height: 100%;
+    background-color: rgb(173, 121, 52);
+}
+
+body{
+    font-size: 100%;
+    padding: 0% 10% 0% 10%;
+    min-height: 100%;
+    min-width: 1100px;
+    background-color: rgb(163, 132, 92) !important;
+}
+
+label{
+    margin-left: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+#scoreboard{
+    width: fit-content;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    background-color: white;
+}
+
+#scoreboard div{
+    display: inline-block;
+}
+
+#board{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.letterTileHolders {
+    background-image: url(../graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg);
+    background-size:contain;
+    height: 100px;
+    width: 100px;
+    margin-left: 0px;
+    margin-right:-8px;
+    padding-left: 0px;
+    padding-right:0px;
+    border:1px;
+    border-color:black;
+    border-style: solid;
+    float:left;
+}
+
+#letterRack {
+    background-image: url(../graphics_data/scrabble-tile-holder-406774_640.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:1000px;
+    height: 300px;
+    margin:auto;
+    margin-top:5vh;
+    padding-top:3vmax;
+    padding-left:4vmax;
+}
+
+/* .letters for class */
+.letters{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    margin: auto;
+    border: 2px;
+    border-color: burlywood;
+    border-style:solid;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
